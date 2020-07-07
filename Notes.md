@@ -24,7 +24,7 @@
 #### Examples scripts & commands
 
 ```bash
-subfinder -d dominio | httpx -silent | githound
+subfinder -d domain| httpx -silent | githound
 ```
 
 ```bash
@@ -32,7 +32,7 @@ subfinder -d $1 -silent | httpx -silent | xargs -I %% bash -c 'python3 /root/../
 ```
 
 ```bash
-subfinder -d domainio -silent | httpx -silent | nuclei -t ../nuclei-templates/cves/ -o fileout
+subfinder -d domain -silent | httpx -silent | nuclei -t ../nuclei-templates/cves/ -o fileout
 ```
 
 ```bash
@@ -57,8 +57,8 @@ cat $1 | httpx -follow-redirects -status-code -vhost -threads 100 | sort -u | gr
 
 ### Examples Shodan
 
-Shodan search : org:organização
-				hostname: dominio
+Shodan search : org:organization
+				hostname: domain
 				
 				
 
